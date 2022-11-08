@@ -1,0 +1,93 @@
+.box{
+    border-radius: 6px;
+    height: 80px;
+    width: 120px;
+    margin:60px auto;
+}
+
+.box1{
+    background-color: cadetblue;
+}
+.box2{
+    background-color: coral;
+    transition-property: all;
+    transition-duration: 4s;
+}
+
+.box:hover{
+    transform: scale(4) ;
+}
+
+.circle1, .circle2, .circle3,
+.circle4, .circle5{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin:15px;
+}
+
+.circle1{
+    background-color: teal;
+    transition: all 3s ease  ;
+}
+.circle2{
+    background-color: chocolate;
+    transition: all 3s ease-in;
+}
+.circle3{
+    background-color: darkorange;
+    transition: all 3s ease-in-out;
+}
+.circle4{
+    background-color: darksalmon;
+    transition: all 3s ease-out;
+}
+.circle5{
+    background-color: darkred;
+    transition: all 3s step-end;
+}
+
+.container-circle:hover .circle1,
+.container-circle:hover .circle2,
+.container-circle:hover .circle3,
+.container-circle:hover .circle4,
+.container-circle:hover .circle5{
+    transform: translateX(300px);
+}
+
+.combinado{
+    background-color: blueviolet;
+    height: 75px;
+    width: 75px;
+    margin: 50px auto;
+    transition: all 3s;
+}
+
+.combinado:hover{
+    transform: rotate(-90deg) scale(2) translateX(100px);
+
+}
+
+.animaciones{
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    background-color:yellow;
+}
+
+.animaciones:hover{
+    animation: cambio-color 5s;
+}
+
+@keyframes cambio-color{
+    1%{
+        background-color: blueviolet;
+    }
+    25%{
+        border-radius: 50%;
+    }
+    75%{
+        background-color: blue;
+        transform: rotate(360deg);
+    }
+}
